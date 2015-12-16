@@ -1,0 +1,22 @@
+<h1> {{requestType}} Request Received: </h1>
+
+
+<h6> Area below is reserved for the data that was sent in the URL query string: </h6>
+<ul>
+
+    {{#each queryList}}
+    <li>{{this.name}}: {{this.value}}
+  {{/each}}
+</ul>
+
+
+<h6> Area below is reserved for the data received in the POST request body: </h6>
+<ul>
+  {{#each postList}}
+    <li>{{this.name}}: {{this.value}}
+  {{/each}}
+</ul>
+
+
+
+
